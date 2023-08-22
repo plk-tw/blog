@@ -1,0 +1,35 @@
+baseURL = 'https://blog.plk.tw/'
+title = '浮浪貢 Phû-lōng-kòng'
+languageCode = 'zh-tw'
+defaultContentLanguage = 'zh-tw'
+hasCJKLanguage = true
+paginate = 10
+
+theme = 'poison'
+pluralizelisttitles = false
+
+
+[permalinks]
+[permalinks.page]
+posts = '/posts/:year/:month/:slug'
+
+[markup]
+[markup.highlight]
+style = 'nord'
+tabWidth = 8
+
+#[taxonomies]
+#series = 'series'
+#tag = 'tags'
+
+[params]
+brand = "浮浪貢"
+brand_image = "/images/masked.png"
+description = "記錄一些技術小玩意兒"
+menu = [
+    {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 5 },
+]
+
+rss_icon = true
+rss_section = "posts"
+
