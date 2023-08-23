@@ -1,13 +1,33 @@
 baseURL = 'https://blog.plk.tw/'
-title = '浮浪貢 Phû-lōng-kòng'
+
+title = '技術浮浪貢 Ki-su̍t Phû-lōng-kòng'
+
 languageCode = 'zh-tw'
 defaultContentLanguage = 'zh-tw'
 hasCJKLanguage = true
+
 paginate = 10
+#enableGitInfo = true
 
-theme = 'poison'
-pluralizelisttitles = false
+#################################
 
+theme = "beautifulhugo"
+
+[author]
+name= "WanCW"
+github= "wancw"
+mastodon = "https://g0v.social/@wancw"
+twitter= "wancw"
+
+[params]
+homeTitle = "技術浮浪貢"
+subtitle = '記錄一些軟體技術小玩意兒'
+logo = "/images/masked.png"
+rss = true
+dateFormat = "2006-01-02"
+showRelatedPosts = true
+
+#################################
 
 [permalinks]
 [permalinks.page]
@@ -15,21 +35,10 @@ posts = '/posts/:year/:month/:slug'
 
 [markup]
 [markup.highlight]
-style = 'nord'
+#style = 'catppuccin-latte'
+style = 'monokailight'
 tabWidth = 8
 
 #[taxonomies]
 #series = 'series'
 #tag = 'tags'
-
-[params]
-brand = "浮浪貢"
-brand_image = "/images/masked.png"
-description = "記錄一些技術小玩意兒"
-menu = [
-    {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 5 },
-]
-
-rss_icon = true
-rss_section = "posts"
-
