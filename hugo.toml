@@ -7,7 +7,7 @@ defaultContentLanguage = 'zh-tw'
 hasCJKLanguage = true
 
 paginate = 10
-#enableGitInfo = true
+enableGitInfo = true
 
 #################################
 
