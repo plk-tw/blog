@@ -40,6 +40,6 @@ posts = '/posts/:year/:month/:slug'
 style = 'monokailight'
 tabWidth = 8
 
-#[taxonomies]
-#series = 'series'
-#tag = 'tags'
+[taxonomies]
+series = 'series'
+tag = 'tags'

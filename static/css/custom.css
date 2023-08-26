@@ -1,3 +1,14 @@
 body {
     /*font-family: 'Noto Sans TC', sans-serif;*/
 }
+
+.blog-series {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.blog-series:before {
+    content: "Series: ";
+}
