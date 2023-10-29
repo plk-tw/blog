@@ -7,6 +7,8 @@ tags: ["ESM", "CommonJS", "JavaScript", "TypeScript"]
 
 要在 CommonJS module 中使用 ESM 必須透過[動態 import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import)；但型別是編譯時期的資訊，一定要用靜態 import。透過*宣告檔案*（Declaration File）可以解決這個問題。
 
+<!--more-->
+
 首先加一個 `.d.ts` 重新 export 你用到的 type：
 
 ```typescript

@@ -4,6 +4,7 @@ slug: javascript-var-declaration-pitfall
 date: 2023-08-27T02:29:05+08:00
 series: 移植 Password Hasher Plus
 tags: ["JavaScript"]
+summary: 'tldr; 把 `var` 變數都換成 `let` 才發現原本的 test case 是跑心酸的。'
 ---
 
 最近又開始把以前移植到一半的 Password Hahser Plus[^1] 撿起來繼續做。

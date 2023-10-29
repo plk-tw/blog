@@ -2,10 +2,10 @@
 title: "用 TypeScript 寫 Jest 的 matcher"
 slug: custom-jest-matcher-using-typescript
 date: 2023-10-29T15:13:07+08:00
+summary: "官方給的範例沒辦法把 matcher 加到 Matcher interface"
 tags:
   - "TypeScript"
   - "Jest"
-summary: "官方給的範例沒辦法把 matcher 加到 Matcher interface"
 ---
 
 一開始依照 [Jest 官方文件](https://jestjs.io/docs/expect#expectextendmatchers) 的寫法：
