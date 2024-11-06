@@ -22,6 +22,7 @@ content:
       - name: date
         label: Date
         type: date
+        format: yyyy-MM-dd
       - name: body
         label: Body
         type: rich-text
