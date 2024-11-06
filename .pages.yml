@@ -3,3 +3,18 @@ content:
     label: Posts
     path: content/posts
     type: collection
+    view:
+      fields: [ title, published, date ]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: slug
+        label: Slug
+        type: string
+      - name: summary
+        label: Summary
+        type: string
+      - name: date
+        label: Date
+        type: date
