@@ -3,3 +3,7 @@
   translation: "Recent Posts"
 - id: toAllPosts # Accepts HTML
   translation: "All posts &rarr;"
+- id: filteringFor
+  translation: "Filtering for \"{{ . }}\""
+- id: removeFilter
+  translation: "Remove filter"

@@ -3,3 +3,7 @@
   translation: "最新文章"
 - id: toAllPosts # Accepts HTML
   translation: "所有文章 &rarr;"
+- id: filteringFor
+  translation: "僅列出「{{ . }}」"
+- id: removeFilter
+  translation: "列出全部"
