@@ -17,3 +17,11 @@
   translation: "Next Post"
 - id: noNextPost
   translation: "No Next Post"
+
+# Series
+- id: series
+  translation: "Series: "
+
+# Related posts
+- id: seeAlso
+  translation: "See also"

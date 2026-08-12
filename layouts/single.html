@@ -6,6 +6,14 @@
 {{ define "main" }}
 {{ if eq .Type "posts" }}{{ if not .Params.menu }}
 <h1>{{ .Title }}</h1>
+
+{{ if .Params.series }}
+<p class="blog-series">
+  <span>{{ i18n "series" }}</span>
+  <a href="{{ $.Site.BaseURL }}series/{{ .Params.series | urlize }}">{{ .Params.series }}</a>
+</p>
+{{ end }}
+
 <p>
   <i>
     <time datetime='{{ .Date.Format "2006-01-02" }}'>
@@ -14,6 +22,7 @@
   </i>
 </p>
 {{ end }}{{ end }}
+
 <content>
   {{ .Content }}
 </content>
@@ -27,5 +36,19 @@
 {{ if eq .Type "posts" }}{{ if (.Param "enablePostNavigator")}}
 {{- partial "post_navigator.html" . -}}
 {{ end }}{{ end }}
+
+{{- $related := where (where .Site.RegularPages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink }}
+{{- $num_to_show := $.Param "related_content_limit" | default 5 }}
+{{- with first $num_to_show $related }}
+  <h4 class="see-also">{{ i18n "seeAlso" }}</h4>
+  <ul class="see-also-list">
+    {{ range . }}
+      <li><a href="{{ .RelPermalink }}" class="see-also-item">
+        <span class="see-also-item-title">{{ .Title }}</span>
+        {{ with .Params.subtitle }}<span class="see-also-item-subtitle">{{ . }}</span>{{ end }}
+      </a></li>
+    {{ end }}
+  </ul>
+{{ end }}
 
 {{ end }}
