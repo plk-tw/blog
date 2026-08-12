@@ -1,17 +1,20 @@
 baseURL = 'https://blog.plk.tw/'
 
-title = '技術浮浪貢 Ki-su̍t Phû-lōng-kòng'
+title = '技術浮浪貢'
 
 locale = 'zh-tw'
 defaultContentLanguage = 'zh-tw'
 hasCJKLanguage = true
+
+enableRobotsTXT = true
 
 #################################
 
 theme = "hugo-bearblog"
 
 [params]
-dateFormat = "2006-01-02"
+  description = "Ki-su̍t Phû-lōng-kòng, 記錄一些軟體技術小玩意兒"
+  dateFormat = "2006-01-02"
 
 #################################
 
@@ -24,6 +27,9 @@ posts = '/posts/:year/:month/:slug'
 #style = 'catppuccin-latte'
 style = 'monokailight'
 tabWidth = 8
+lineNos = true
+lineNumbersInTable = false
+codeFences = true
 
 [taxonomies]
 series = 'series'
