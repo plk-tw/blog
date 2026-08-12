@@ -1,0 +1,5 @@
+# Content
+- id: recentPosts
+  translation: "最新文章"
+- id: toAllPosts # Accepts HTML
+  translation: "所有文章 &rarr;"
