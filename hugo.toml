@@ -6,28 +6,12 @@ locale = 'zh-tw'
 defaultContentLanguage = 'zh-tw'
 hasCJKLanguage = true
 
-paginate = 10
-enableGitInfo = true
-
 #################################
 
 theme = "hugo-bearblog"
 
-[author]
-name= "WanCW"
-github= "wancw"
-mastodon = "https://g0v.social/@wancw"
-twitter= "wancw"
-
 [params]
-homeTitle = "技術浮浪貢"
-subtitle = '記錄一些軟體技術小玩意兒'
-logo = "/images/masked.png"
-rss = true
 dateFormat = "2006-01-02"
-showRelatedPosts = true
-comments = true
-commit = '#'
 
 #################################
 
