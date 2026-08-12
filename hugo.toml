@@ -2,7 +2,7 @@ baseURL = 'https://blog.plk.tw/'
 
 title = '技術浮浪貢 Ki-su̍t Phû-lōng-kòng'
 
-languageCode = 'zh-tw'
+locale = 'zh-tw'
 defaultContentLanguage = 'zh-tw'
 hasCJKLanguage = true
 
