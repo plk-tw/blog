@@ -11,7 +11,7 @@ enableGitInfo = true
 
 #################################
 
-theme = "beautifulhugo"
+theme = "hugo-bearblog"
 
 [author]
 name= "WanCW"
