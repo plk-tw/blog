@@ -14,6 +14,7 @@ theme = "hugo-bearblog"
 
 [params]
   description = "Ki-su̍t Phû-lōng-kòng, 記錄一些軟體技術小玩意兒"
+  enablePostNavigator = true
   dateFormat = "2006-01-02"
 
 #################################

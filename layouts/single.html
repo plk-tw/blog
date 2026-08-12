@@ -1,6 +1,7 @@
 {{/*
 - Copied from themes/hugo-bearblog/layouts/_default/single.html
 - Replace type detection of `"blog"` with `"posts"`
+- Move navigator after tags
 */}}
 {{ define "main" }}
 {{ if eq .Type "posts" }}{{ if not .Params.menu }}
@@ -17,13 +18,14 @@
   {{ .Content }}
 </content>
 
-{{ if eq .Type "posts" }}{{ if (.Param "enablePostNavigator")}}
-{{- partial "post_navigator.html" . -}}
-{{ end }}{{ end }}
-
 <p>
   {{ range (.GetTerms "tags") }}
   <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
 </p>
+
+{{ if eq .Type "posts" }}{{ if (.Param "enablePostNavigator")}}
+{{- partial "post_navigator.html" . -}}
+{{ end }}{{ end }}
+
 {{ end }}

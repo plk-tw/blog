@@ -7,3 +7,13 @@
   translation: "僅列出「{{ . }}」"
 - id: removeFilter
   translation: "列出全部"
+
+# Navigation
+- id: previousPost
+  translation: "上一篇"
+- id: noPreviousPost
+  translation: "沒有上一篇"
+- id: nextPost
+  translation: "下一篇"
+- id: noNextPost
+  translation: "沒有下一篇"

@@ -7,3 +7,13 @@
   translation: "Filtering for \"{{ . }}\""
 - id: removeFilter
   translation: "Remove filter"
+
+# Navigation
+- id: previousPost
+  translation: "Previous Post"
+- id: noPreviousPost
+  translation: "No Previous Post"
+- id: nextPost
+  translation: "Next Post"
+- id: noNextPost
+  translation: "No Next Post"

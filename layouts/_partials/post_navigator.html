@@ -1,0 +1,23 @@
+{{/*
+- Copied from themes/hugo-bearblog/layouts/partials/post_navigator.html
+- Change styles
+- Extract translations
+*/}}
+<div style="font-size:0.8em;display:flex;gap:16px;justify-content:space-between;">
+
+  <p style="{{ if not .PrevInSection }}visibility: hidden{{ end }}">
+    {{ if .PrevInSection }}
+    <a href="{{ .PrevInSection.Permalink }}">&laquo; {{ i18n "previousPost" }}</a>
+    {{ else }}
+    {{ i18n "noPreviousPost" }}
+    {{ end }}
+  </p>
+
+  <p style="{{ if not .NextInSection }}visibility: hidden{{ end }}">
+    {{ if .NextInSection }}
+    <a href="{{ .NextInSection.Permalink }}">{{ i18n "nextPost" }} &raquo;</a>
+    {{ else }}
+    {{ i18n "noNextPost" }}
+    {{ end }}
+  </p>
+</div>
