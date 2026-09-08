@@ -28,17 +28,43 @@ _（透過 Apollo server 的 `formatError` 選項改寫 error response）_
 - 如果拿到的 `GraphQLError.originalError` 不是 NestJS 的 `HttpException`，不做改寫；
 - 改寫方式：
   - 將原本 HttpExcpetion 的 `.response` 塞在 output 的 `.extensions.originalError` 欄位
-  - 如果 `HttpException` 是 400、401、403 之一，會修改 `.extensions.code` 為對應的值；
+  - 如果 `HttpException` 是 400、401、403 之一，會修改 `.extensions.code` 為對應的值。範例：
     ```json
     {
-      "code": "BAD_REQUEST"
+      "errors": [
+        {
+          "message": "....",
+          "extensions": {
+            "code": "BAD_REQUEST",
+            "originalError": {
+              "message": "...."
+              "error": "Bad Request"
+              "statusCode": 400
+            }
+          }
+        }
+      ],
+      "data": null
     }
     ```
-    如果不是，則保留 `INTERNAL_SERVER_ERROR` 作為預設值，新增 `.extensions.status` 欄位來表示 HTTP 狀態碼
+  - 如果不是，則保留 `INTERNAL_SERVER_ERROR` 作為預設值，新增 `.extensions.status` 欄位來表示 HTTP 狀態碼。例如：
     ```json
     {
-      "code": "INTERNAL_SERVER_ERROR",
-      "status": 404
+      "errors": [
+        {
+          "message": "",
+          "extensions": {
+            "code": "INTERNAL_SERVER_ERROR",
+            "status": 404,
+            "originalError": {
+              "message": "...."
+              "error": "Not Found"
+              "statusCode": 404
+            }
+          }
+        }
+      ],
+      "data": null
     }
     ```
 
