@@ -1,10 +1,11 @@
 ---
-title: 【文摘】何謂持續整合（Continuous Integration）？
+title: 何謂持續整合（Continuous Integration）？
 date: 2026-08-13T13:43:22+08:00
 slug: what-is-ci
 summary: 在 FB DevOps Taiwan 社團看到，關於什麼是 CI 的 Twitter 討論串
 tags:
   - CI
+  - 拾人牙慧
 ---
 
 在 Facebook [DevOps Taiwan](https://www.facebook.com/groups/DevOpsTaiwan/permalink/2021691151251254/) 社團看到的 ~~Twitter~~ X 討論串：
